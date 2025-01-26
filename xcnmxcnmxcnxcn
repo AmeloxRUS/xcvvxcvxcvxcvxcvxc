@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 -- Zaktualizowana whitelist z dodatkowymi nickami
 local whitelist = {
-"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", ""
+"Wojtes_BMW", "Madhya78", "anothernick", "", ""
 
 
 
@@ -110,6 +110,12 @@ if game.PlaceId == 3956818381 then
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 52643.9961, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
          wait (2.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.861298, 91359.9453, -480.386932, -0.173624277, 0, -0.984811902, 0, 1, 0, 0.984811902, 0, -0.173624277)
+         wait(2.0)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141.994003, 13709.5869, 72.4150009, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+         wait(2.0)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 33243.2109, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
+         wait(2.0)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 28292.5195, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
         wait (2.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 39353.8047, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
          wait (2.0)
@@ -145,12 +151,6 @@ if game.PlaceId == 3956818381 then
     end
     })
     
-    Tob:AddButton({
-        Name = "*if have locked use its*",
-        Callback = function()
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 46046.7891, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
-         end
-    })
     Tab:AddButton({
         Name = "Teleport to shop *last world*",
         Callback = function()
