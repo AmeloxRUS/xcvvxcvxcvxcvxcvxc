@@ -1,4 +1,33 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AmeloxRUS/whitle-list/refs/heads/main/xcvcxvxcb"))()
+local player = game.Players.LocalPlayer
+-- Zaktualizowana whitelist z dodatkowymi nickami
+local whitelist = {
+"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", ""
+
+
+
+
+}
+-- Sigma remake by WojtesDev
+local function normalizeUsername(username)
+return username:lower():gsub("%s+", "")  -- changer LOL
+end
+-- YES U ARE
+local function isNIGAWHITE(username)
+local normalizedName = normalizeUsername(username)
+for _,whitelistedName in ipairs(whitelist) do
+if normalizeUsername(whitelistedName) == normalizedName then
+return true
+end
+end
+return false
+end
+-- checker
+if isNIGAWHITE(player.Name) then
+print("Whitelisted: " .. player.Name)
+else
+print(player.Name .. " is not on the whitelist. Kicking...")
+player:Kick("You are not on the whitelist. Please contact support for assistance. Discord vantus_men.ters1")
+end
 
 if game.PlaceId == 3956818381 then
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua"))()
@@ -155,7 +184,7 @@ Tib:AddToggle({
         Name = "Teleport to shop *last world*",
         Callback = function()
         wait (.000000000000000000000000000000000000000000000000000000000000000000000000000001)
-         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(118.289368, 91247.8594, 18.6333008, 4.2617321e-05, 0.906304121, 0.422626197, -1, 4.2617321e-05, 9.46223736e-06, -9.46223736e-06, -0.422626197, 0.906304121)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 91282.3125, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
         end
     })
     
