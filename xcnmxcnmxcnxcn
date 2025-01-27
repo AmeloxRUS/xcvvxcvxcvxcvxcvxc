@@ -195,6 +195,7 @@ Tib:AddToggle({
         Name = "Destroy menu",
         Callback = function()
             wait (.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001) -- для оптимизации
+          game.Players.LocalPlayer.Character.Humanoid.Health = 0
          OrionLib:Destroy()
         end
     })
