@@ -246,27 +246,99 @@ Tib:AddToggle({
 		end
     })
 
-	 Tib:AddButton({
+	 Tib:AddToggle({
         Name = "auto farm *Chi* *UNREAL OFF IF NEED TO USE RESET *",
-        Callback = function()
-          while wait() do
+        Callback = function(Value)
+		if Value == true then
 		wait(.000000000000000001)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
-    wait(.000000000000000001)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(244.624741, 91.6100006, -304.212524, 0, 0, 1, -1, 0, 0, 0, -1, 0)
-		wait(.000000000000000001)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.892181, 91.0321045, -269.92215, -5.96046448e-08, 0.518716753, 0.854946196, -1, -5.96046448e-08, 0, 0, -0.854946196, 0.518716693)
-		wait(.000000000000000001)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(239.892181, 89.5592346, -273.92215, -4.47034836e-08, -0.835186422, 0.549966991, -1, -4.47034836e-08, 0, 0, -0.549966991, -0.835186481)
-		wait(.000000000000000001)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 127.47258, -285.065002, 0.484781265, -0.874639034, -2.61903324e-07, 0.757436812, 0.419820994, -0.5000453, 0.437359363, 0.242412448, 0.865999281)
-        wait(.000000000000000001)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(243.892181, 91.9022751, -268.92215, 0, 0.992895603, 0.118988805, -1, 0, 0, 0, -0.118988805, 0.992895603)
-		wait(.000000000000000001)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(233.892181, 91.7460098, -286.92215, -1.1920929e-07, 0.960501552, 0.278275013, -1.00000012, -1.1920929e-07, 0, 0, -0.278275013, 0.960501432)
-		wait(.000000000000000001)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(223.892181, 89.1067963, -281.92215, -8.47503543e-08, -0.993827641, 0.110936195, -1.00000012, -8.47503543e-08, 0, 0, -0.110936195, -0.993827701)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local VirtualUser = game:GetService("VirtualUser")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local players = game.Players:GetPlayers()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local player = game.Players.LocalPlayer
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local soulType = "Good" -- Good or Bad , Change this only
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local lplr = ""
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local jplr = ""
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+_G.Enabled = true
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+local function check()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+ if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then 
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+   game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)                            
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+	end
    end
+  end
+ 
+while _G.Enabled and wait(.4) do
+if workspace[player.Name]:FindFirstChild("Head") then
+ if workspace[player.Name].Head:FindFirstChild("nameGui") then
+  workspace[player.Name].Head.nameGui:Destroy()
+ end
+end
+player.ninjaEvent:FireServer("goInvisible")
+if player.Character:FindFirstChild("inSafezone") then
+     player.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame + Vector3.new(0,200,0)
+end
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+game.Players.PlayerRemoving:Connect(function(player)
+        lplr = (player.Name)
+        players = game.Players:GetPlayers()
+end)
+ 
+game.Players.PlayerAdded:Connect(function(player)
+        jplr = (player.Name)
+        players = game.Players:GetPlayers()
+end)
+ 
+players = game.Players:GetPlayers()
+game:service'RunService'.Stepped:Connect(function()
+        if player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+            player.Character.Humanoid:ChangeState(11)
+        end
+    end)
+for _, v in pairs(players) do
+if v.Name ~= player.Name and v.Name ~= lplr and v.Name ~= jplr and workspace:FindFirstChild(v.Name) and workspace[v.Name]:FindFirstChild("Head") then
+if v.Name ~= game.Players.LocalPlayer.Name and not v.Character:FindFirstChild("inSafezone") then
+v.Character.Head.CanCollide = false
+v.Character.Head.Anchored = true
+v.Character.Head.Position = player.Character.HumanoidRootPart.Position + Vector3.new(4.5,0,0)
+elseif v.Name ~= game.Players.LocalPlayer.Name and v.Character:FindFirstChild("inSafezone") then
+v.Character.Head.CFrame = player.Character.HumanoidRootPart.CFrame + Vector3.new(0,20,0)
+end
+end
+end
+ 
+if player.Character:FindFirstChildOfClass("Tool") then
+player.Character:FindFirstChildOfClass("Tool"):Activate()
+end
+ 
+for _,v in pairs(game.Workspace.soulPartsFolder:GetChildren()) do
+if v.Name == "soulPart" and v.collectPlayers:FindFirstChild(player.Name) then
+if not v:FindFirstChild("isGoodKarma") and soulType == "Bad" then
+   player.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,5,0)
+   player.ninjaEvent:FireServer("collectSoul", v)
+elseif v:FindFirstChild("isGoodKarma") and soulType == "Good" then 
+   player.Character.HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0,5,0)
+   player.ninjaEvent:FireServer("collectSoul", v)					
+end
+end
+check()
+end
+end
+end
+end
 end
 })
 
