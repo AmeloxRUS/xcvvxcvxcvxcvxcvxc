@@ -326,9 +326,7 @@ infotab:AddParagraph("Make by","AMELOXICK & Sander X")
         Increment = 1,
         ValueName = "Speed",
         Callback = function(value)
-		while wait() do
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-        end  
 	end  
 })
 
