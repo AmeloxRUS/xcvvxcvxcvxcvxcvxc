@@ -314,6 +314,7 @@ end
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
         end    
  })
+infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 
     Tib:AddSlider({
         Name = "speed",
@@ -330,7 +331,5 @@ end
 	end  
 })
 
-
-	infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 end
     OrionLib:Init()
