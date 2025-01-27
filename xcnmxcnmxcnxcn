@@ -320,5 +320,7 @@ end
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(373.023926, 198.051392, -166.017853, 0, 0.783537626, 0.621344388, -1, 0, 0, 0, -0.621344388, 0.783537626)
                     end
     })
+
+	infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 end
     OrionLib:Init()
