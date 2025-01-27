@@ -229,6 +229,16 @@ Tib:AddToggle({
         end
     })
 
+	    Tib:AddButton({
+        Name = "Copy Pets",
+        Callback = function()
+            wait (.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001) -- для оптимизации
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4615.9707, 132.701859, 1446.01318, 1.54972076e-06, -0.422563195, -0.906333447, -1, -1.54972076e-06, -9.83476639e-07, -9.83476639e-07, 0.906333447, -0.422563195)
+        wait(0.5)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.790264964, 5.02765894, 77.5139694, 0.76633358, -0.0272125714, -0.641866267, -2.89350282e-07, 0.999102533, -0.0423583016, 0.642442882, 0.032460779, 0.765645742)
+		end
+    })
+
 	 Tib:AddButton({
         Name = "auto farm *Chi* *UNREAL OFF IF NEED TO USE RESET *",
         Callback = function()
