@@ -67,13 +67,18 @@ if game.PlaceId == 3956818381 then
         PremiumOnly = false
     })
     
-    Tab:AddButton({
-        Name = "Teleport to last *click + use jump*",
+
+
+		 Tab:AddButton({
+        Name = "Teleport to last *click*",
         Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.861298, 91359.9453, -480.386932, -0.173624277, 0, -0.984811902, 0, 1, 0, 0.984811902, 0, -0.173624277)
-        wait (3.0)
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        print("Character Reset!")
+		wait (5.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 91282.3125, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
-        end
+
+		end
     })
 	    infotab:AddButton({
         Name = "copy discord server",
@@ -177,7 +182,9 @@ Tib:AddToggle({
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45.8419991, 787.232178, -151.813995, -0.766061664, -0, -0.642767608, 0, -1.00000048, 0, -0.642767608, 0, 0.766061246)
          wait (2.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 46046.7891, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
-    end
+         game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		 print("All world open Player reset")    
+	end
     })
     
     Tab:AddButton({
@@ -319,11 +326,10 @@ end
                         wait (1.0)
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.6795883, 7728.46338, -63.5291214, -2.07424164e-05, 0.57355696, 0.819165647, -0.99999994, -2.07424164e-05, -1.07884407e-05, 1.07884407e-05, -0.819165647, 0.573557019)
                         wait (1.0)
-                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 46046.7891, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
-                        wait (1.0)
-                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(373.023926, 198.051392, -166.017853, 0, 0.783537626, 0.621344388, -1, 0, 0, 0, -0.621344388, 0.783537626)
-                    end
-    })
+                        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+print("Character Reset!")
+end
+})
 
 	infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 end
