@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 -- Zaktualizowana whitelist z dodatkowymi nickami
 local whitelist = {
-"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", ""
+"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", "2324VIP1", ""
 
 
 
