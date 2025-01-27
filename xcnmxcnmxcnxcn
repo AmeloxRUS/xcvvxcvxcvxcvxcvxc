@@ -3,15 +3,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AmeloxRUS/whitle-list
 if game.PlaceId == 3956818381 then
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua"))()
     local Window = OrionLib:MakeWindow({Name = "ColdTeam X", HidePremium = false, SaveConfig = true, IntroEnabled = false})
+   
     
-
+    wait(1.0)
 	    Tib = Window:MakeTab({
         Name = "ColdTeam X Main",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-
-
+    wait(1.0)
     Tab = Window:MakeTab({
         Name = "ColdTeam X Last world",
         Icon = "rbxassetid://4483345998",
@@ -19,19 +19,19 @@ if game.PlaceId == 3956818381 then
     })
 
 
-    
+    wait(1.0)
     Tob = Window:MakeTab({
         Name = "ColdTeam X World all",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-    
+    wait(1.0)
     Teb = Window:MakeTab({
         Name = "ColdTeam X Destroy menu",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-       
+    wait(1.0)
 	    infotab = Window:MakeTab({
         Name = "ColdTeam X Info",
 		Icon = "rbxassetid://4483345998",
@@ -49,6 +49,7 @@ if game.PlaceId == 3956818381 then
 		end
     })
 
+    
 
 
 	    infotab:AddButton({
@@ -195,7 +196,6 @@ Tib:AddToggle({
         Name = "Destroy menu",
         Callback = function()
             wait (.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001) -- для оптимизации
-          game.Players.LocalPlayer.Character.Humanoid.Health = 0
          OrionLib:Destroy()
         end
     })
@@ -315,9 +315,9 @@ end
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
         end    
  })
-infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 
-    Tib:AddSlider({
+
+     Tib:AddSlider({
         Name = "speed",
         Min = 16,
         Max = 500,
@@ -327,8 +327,10 @@ infotab:AddParagraph("Make by","AMELOXICK & Sander X")
         ValueName = "Speed",
         Callback = function(value)
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-	end  
+        end  
 })
+
+infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 
 end
     OrionLib:Init()
