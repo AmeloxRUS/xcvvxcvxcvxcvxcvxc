@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 -- Zaktualizowana whitelist z dodatkowymi nickami
 local whitelist = {
-"Wojtes_BMW", "Madhya78", "anothernick", "Koroche84", "papanaruto4", "2324VIP1", ""
+"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", ""
 
 
 
@@ -66,9 +66,6 @@ if game.PlaceId == 3956818381 then
 		Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
-    
-
-
 		 Tab:AddButton({
         Name = "Teleport to last *click*",
         Callback = function()
@@ -80,6 +77,9 @@ if game.PlaceId == 3956818381 then
 
 		end
     })
+
+
+
 	    infotab:AddButton({
         Name = "copy discord server",
         Callback = function()
@@ -330,6 +330,35 @@ end
 print("Character Reset!")
 end
 })
+
+	    Tib:AddSlider({
+        Name = "Jump",
+        Min = 50,
+        Max = 999999,
+        Default = 20,
+        Color = Color3.fromRGB(21,1,50),
+        Increment = 1,
+        ValueName = "Jump",
+        Callback = function(value)
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+        end    
+ })
+
+    Tib:AddSlider({
+        Name = "speed",
+        Min = 16,
+        Max = 500,
+        Default = 20,
+        Color = Color3.fromRGB(21,1,50),
+        Increment = 1,
+        ValueName = "Speed",
+        Callback = function(value)
+		while wait() do
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+        end  
+	end  
+})
+
 
 	infotab:AddParagraph("Make by","AMELOXICK & Sander X")
 end
