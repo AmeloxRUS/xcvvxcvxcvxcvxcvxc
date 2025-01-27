@@ -1,4 +1,33 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AmeloxRUS/whitle-list/refs/heads/main/xcvcxvxcb"))()
+local player = game.Players.LocalPlayer
+-- Zaktualizowana whitelist z dodatkowymi nickami
+local whitelist = {
+"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", ""
+
+
+
+
+}
+-- Sigma remake by WojtesDev
+local function normalizeUsername(username)
+return username:lower():gsub("%s+", "")  -- changer LOL
+end
+-- YES U ARE
+local function isNIGAWHITE(username)
+local normalizedName = normalizeUsername(username)
+for _,whitelistedName in ipairs(whitelist) do
+if normalizeUsername(whitelistedName) == normalizedName then
+return true
+end
+end
+return false
+end
+-- checker
+if isNIGAWHITE(player.Name) then
+print("Whitelisted: " .. player.Name)
+else
+print(player.Name .. " is not on the whitelist. Kicking...")
+player:Kick("You are not on the whitelist. Please contact support for assistance. Discord vantus_men.ters1")
+end
 
 if game.PlaceId == 3956818381 then
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua"))()
@@ -37,6 +66,7 @@ if game.PlaceId == 3956818381 then
 		Icon = "rbxassetid://4483345998",
         PremiumOnly = false
     })
+
 		 Tab:AddButton({
         Name = "Teleport to last *click*",
         Callback = function()
@@ -79,7 +109,6 @@ Tib:AddToggle({
     Tob:AddButton({
         Name = "open all world *no fast*",
         Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.861298, 91359.9453, -480.386932, -0.173624277, 0, -0.984811902, 0, 1, 0, 0.984811902, 0, -0.173624277)
         wait (3.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 87087.3125, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
         wait (3.0)
@@ -154,8 +183,7 @@ Tib:AddToggle({
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45.8419991, 787.232178, -151.813995, -0.766061664, -0, -0.642767608, 0, -1.00000048, 0, -0.642767608, 0, 0.766061246)
          wait (2.0)
          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(140.093933, 46046.7891, 66.5151367, 0.939700544, 0, -0.341998369, 0, -1.00000048, -0, -0.341998369, 0, -0.939700961)
-         game.Players.LocalPlayer.Character.Humanoid.Health = 0
-		 print("All world open Player reset")    
+
 	end
     })
     
@@ -222,21 +250,21 @@ Tib:AddToggle({
         Name = "auto farm *Chi* *UNREAL OFF IF NEED TO USE RESET *",
         Callback = function()
           while wait() do
-		wait(0.5)
+		wait(.000000000000000001)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
-        wait(0.5)
+    wait(.000000000000000001)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(244.624741, 91.6100006, -304.212524, 0, 0, 1, -1, 0, 0, 0, -1, 0)
-		wait(0.5)	
+		wait(.000000000000000001)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.892181, 91.0321045, -269.92215, -5.96046448e-08, 0.518716753, 0.854946196, -1, -5.96046448e-08, 0, 0, -0.854946196, 0.518716693)
-		wait(0.5)
+		wait(.000000000000000001)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(239.892181, 89.5592346, -273.92215, -4.47034836e-08, -0.835186422, 0.549966991, -1, -4.47034836e-08, 0, 0, -0.549966991, -0.835186481)
-		wait(0.5)
+		wait(.000000000000000001)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 127.47258, -285.065002, 0.484781265, -0.874639034, -2.61903324e-07, 0.757436812, 0.419820994, -0.5000453, 0.437359363, 0.242412448, 0.865999281)
-        wait(0.5)
+        wait(.000000000000000001)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(243.892181, 91.9022751, -268.92215, 0, 0.992895603, 0.118988805, -1, 0, 0, 0, -0.118988805, 0.992895603)
-		wait(0.5)
+		wait(.000000000000000001)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(233.892181, 91.7460098, -286.92215, -1.1920929e-07, 0.960501552, 0.278275013, -1.00000012, -1.1920929e-07, 0, 0, -0.278275013, 0.960501432)
-		wait(0.5)
+		wait(.000000000000000001)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(223.892181, 89.1067963, -281.92215, -8.47503543e-08, -0.993827641, 0.110936195, -1.00000012, -8.47503543e-08, 0, 0, -0.110936195, -0.993827701)
    end
 end
@@ -247,7 +275,7 @@ end
         Name = "auto farm *no all*",
         Callback = function()
             wait (1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001) -- для оптимизации
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(46.2411652, 5014.76807, -39.0360794, 4.94718552e-05, -0.819112599, 0.573632717, -0.99999994, -4.94718552e-05, 1.55866146e-05, 1.55866146e-05, -0.573632717, -0.819112539)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(46.2411652, 5014.76807, -39.0360794, 4.94718552e-05, -0.819112599, 0.573632717, -0.99999994, -4.94718552e-05, 1.55866146e-05, 1.55866146e-05, -0.573632717, -0.819112539)
        wait (1.0)
        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29.1502953, 12059.6699, 183.003876, -2.05039978e-05, -0.499938965, 0.866060615, -1, 2.05039978e-05, -1.18613243e-05, -1.18613243e-05, -0.866060615, -0.499938965)
        wait (1.0)
@@ -297,11 +325,13 @@ end
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(316.561188, 697.966614, -5.9420557, 1.4424324e-05, -0.707153797, -0.70705986, -1, -1.4424324e-05, -5.9902668e-06, -5.9902668e-06, 0.70705986, -0.707153797)
                         wait (1.0)
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.6795883, 7728.46338, -63.5291214, -2.07424164e-05, 0.57355696, 0.819165647, -0.99999994, -2.07424164e-05, -1.07884407e-05, 1.07884407e-05, -0.819165647, 0.573557019)
-                        wait (1.0)
-                        game.Players.LocalPlayer.Character.Humanoid.Health = 0
-print("Character Reset!")
+                        wait(2.0)
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.379211, -4.53478622, -1109.97559, 0.819155693, 0, 0.573571265, 0, 1, 0, -0.573571265, 0, 0.819155693)
+                        wait (4.0)
+              
 end
 })
+
 
 	    Tib:AddSlider({
         Name = "Jump",
@@ -315,7 +345,6 @@ end
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
         end    
  })
-
 
      Tib:AddSlider({
         Name = "speed",
@@ -331,6 +360,7 @@ end
 })
 
 infotab:AddParagraph("Make by","AMELOXICK & Sander X")
+
 
 end
     OrionLib:Init()
