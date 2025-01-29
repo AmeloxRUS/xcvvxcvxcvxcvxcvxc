@@ -260,9 +260,6 @@ Tib:AddToggle({
         Callback = function(Value)
 		if Value == true then
 		wait(.000000000000000001)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
 local VirtualUser = game:GetService("VirtualUser")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
 local players = game.Players:GetPlayers()
