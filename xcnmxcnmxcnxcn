@@ -246,6 +246,15 @@ Tib:AddToggle({
 		end
     })
 
+    Tib:AddButton({
+        Name = "Invisible * if no have to you unreal use*",
+        Callback = function()
+            player.ninjaEvent:FireServer("goInvisible")
+		end
+    })
+
+    
+
 	 Tib:AddToggle({
         Name = "auto farm *Chi* *UNREAL OFF IF NEED TO USE RESET *",
         Callback = function(Value)
