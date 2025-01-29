@@ -1,73 +1,42 @@
-local player = game.Players.LocalPlayer
--- Zaktualizowana whitelist z dodatkowymi nickami
-local whitelist = {
-"Wojtes_BMW", "Madhya78", "anothernick", "Miram5555", "Koroche84", "papanaruto4", ""
-
-
-
-
-}
--- Sigma remake by WojtesDev
-local function normalizeUsername(username)
-return username:lower():gsub("%s+", "")  -- changer LOL
-end
--- YES U ARE
-local function isNIGAWHITE(username)
-local normalizedName = normalizeUsername(username)
-for _,whitelistedName in ipairs(whitelist) do
-if normalizeUsername(whitelistedName) == normalizedName then
-return true
-end
-end
-return false
-end
--- checker
-if isNIGAWHITE(player.Name) then
-print("Whitelisted: " .. player.Name)
-else
-print(player.Name .. " is not on the whitelist. Kicking...")
-player:Kick("You are not on the whitelist. Please contact support for assistance. Discord vantus_men.ters1")
-end
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AmeloxRUS/whitle-list/refs/heads/main/xcvcxvxcb"))()
 if game.PlaceId == 3956818381 then
     local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/guiformyfriend/refs/heads/main/redversion.lua"))()
     local Window = OrionLib:MakeWindow({Name = "ColdTeam X", HidePremium = false, SaveConfig = true, IntroEnabled = false})
-   
     
-    wait(1.0)
+
 	    Tib = Window:MakeTab({
         Name = "ColdTeam X Main",
-        Icon = "rbxassetid://4483345998",
+        Icon = "rbxassetid://7733960981",
         PremiumOnly = false
     })
-    wait(1.0)
+
+
     Tab = Window:MakeTab({
         Name = "ColdTeam X Last world",
-        Icon = "rbxassetid://4483345998",
+        Icon = "rbxassetid://7733924216",
         PremiumOnly = false
     })
 
 
-    wait(1.0)
+    
     Tob = Window:MakeTab({
         Name = "ColdTeam X World all",
-        Icon = "rbxassetid://4483345998",
+        Icon = "rbxassetid://7733924216",
         PremiumOnly = false
     })
-    wait(1.0)
+    
     Teb = Window:MakeTab({
         Name = "ColdTeam X Destroy menu",
-        Icon = "rbxassetid://4483345998",
+        Icon = "rbxassetid://7733955511",
         PremiumOnly = false
     })
-    wait(1.0)
+       
 	    infotab = Window:MakeTab({
         Name = "ColdTeam X Info",
-		Icon = "rbxassetid://4483345998",
+		Icon = "rbxassetid://7733789088",
         PremiumOnly = false
     })
-
-		 Tab:AddButton({
+			 Tab:AddButton({
         Name = "Teleport to last *click*",
         Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.861298, 91359.9453, -480.386932, -0.173624277, 0, -0.984811902, 0, 1, 0, 0.984811902, 0, -0.173624277)
@@ -260,6 +229,9 @@ Tib:AddToggle({
         Callback = function(Value)
 		if Value == true then
 		wait(.000000000000000001)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
 local VirtualUser = game:GetService("VirtualUser")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235.895996, 85.1970444, -285.065002, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
 local players = game.Players:GetPlayers()
